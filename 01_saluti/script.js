@@ -4,6 +4,12 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
+
+/**
+ * funzione che accetta una stringa come Input, e restituisce un saluto personalizzato
+ * @param {string} userNamename Nome a cui indirizzare il saluto
+ * @returns {string} saluto personalizzato
+ */
 function greeting(userNamename) {
     return `Ciao ${userName}`;
 }
