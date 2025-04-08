@@ -1,20 +1,17 @@
 /* Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
 
-const userName = 'Mario';
-
-
 // Dichiara la funzione qui.
 
 /**
  * funzione che accetta una stringa come Input, e restituisce un saluto personalizzato
- * @param {string} userNamename Nome a cui indirizzare il saluto
+ * @param {string} userName Nome a cui indirizzare il saluto
  * @returns {string} saluto personalizzato
  */
-function greeting(userNamename) {
+function greeting(userName) {
     return `Ciao ${userName}`;
 }
 // Invoca la funzione qui e stampa il risultato in console
-
+const userName = 'Mario';
 console.log(greeting(userName));
 
 
