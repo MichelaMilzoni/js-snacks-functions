@@ -11,13 +11,12 @@ const srcCharacter = "A";
  * @param {string} srcCharacter filtro per iniziare
  * @returns {array} array filtrato
  */
-
-// Invoca la funzione qui e stampa il risultato in console
 function filteredArray(nameList, srcCharacter) {
-    const filteredName = [];
+    const filteredName = []; //array vuoto dove copiare gli elementi che iniziano per srcCharacter A
 
+    // ciclo for dove indice = 0; indice < lunghezza array; scorri la lista un elemento alla volta
     for (let i = 0; i < nameList.length; i++) {
-        const currentName = nameList[i];
+        const currentName = nameList[i]; 
 
         if (currentName[0] === srcCharacter) {
             filteredName.push(currentName);
@@ -25,6 +24,8 @@ function filteredArray(nameList, srcCharacter) {
     }
     return filteredName
 }
+
+// Invoca la funzione qui e stampa il risultato in console
 
 console.log(filteredArray(names, srcCharacter));
 
